@@ -7,7 +7,6 @@ export default function page() {
   const [contador, setContador] = useState<number>(0);
   const [contadorF, setContadorF] = useState<number>(0);
   const [estado, setEstado] = useState<string>("Default");
-  const [estadoF, setEstadoF] = useState<string>("Default");
 
   const aumentarContadorLet = () => {
     console.log(contadorLet);
@@ -174,7 +173,7 @@ export default function page() {
       >
         Cambiar estado
       </button>
-      <p className="text-center mt-3">Estado: {estadoF}</p>
+      <p className="text-center mt-3">Estado: {estado}</p>
       <h2 className="mt-4">Practica</h2>
       <h3>Ejercicio 1: Contador 2.0</h3>
       <p>
@@ -185,7 +184,7 @@ export default function page() {
       </p>
       <h3>Ejercicio 2: Estado string</h3>
       <p>
-        Crear una función que cambie el valor de un estado de tipo string
+        Crear una función que añada el apellido a un estado de tipo string
         utilizando la actualización funcional. Incluir un botón que ejecute esta
         función y una etiqueta <code>p</code> que muestre el string. Agregar
         otro botón para resetear el estado al valor inicial con el que se
@@ -212,6 +211,12 @@ export default function page() {
         tenga un texto que menciones y el contador aumento o disminuyo
       </p>
       <div className="d-flex justify-content-end my-5">
+        <Link
+          href={"/useState/cap1/practica"}
+          className="btn btn-secondary me-4"
+        >
+          Practica cap1
+        </Link>
         <Link href={"/useState"} className="btn btn-secondary me-4">
           Volver a useState
         </Link>

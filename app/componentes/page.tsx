@@ -93,6 +93,9 @@ export default function page() {
         </li>
       </ul>
       <div className="d-flex justify-content-end mb-5">
+        <Link href={"/componentes/practica"} className="btn btn-secondary me-3">
+          Practica
+        </Link>
         <Link href={"/useState"} className="btn btn-secondary">
           Siguiente tema: useState
         </Link>
